@@ -1,0 +1,405 @@
+{
+    "resources": {
+      "SDSUECRT": {
+        "Resource Type": "financial",
+        "state": "CA",
+        "title": "Economic Crisis Response Team (SDSU)",
+        "website": "https://sacd.sdsu.edu/ecrt/resources"
+      },
+      "SDSUCPS": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "Counseling & Psychological Services (SDSU)",
+        "phone number": "619-594-5220"
+      },
+      "SDSUCARE": {
+        "Resource Type": "emergency",
+        "state": "CA",
+        "title": "Campus Assistance, Response, Evaluation & Support Team (SDSU)",
+        "website": "https://sacd.sdsu.edu/cares-team"
+      },
+      "SDSUSTLP": {
+        "Resource Type": "financial",
+        "state": "CA",
+        "title": "Short-Term Loan Program (SDSU)",
+        "website": "https://sacd.sdsu.edu/ecrt/resources"
+      },
+      "SDSUBNC": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "Basic Needs Center (SDSU)",
+        "website": "https://sacd.sdsu.edu/ecrt"
+      },
+      "USDCounseling": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "Counseling Center (USD)",
+        "phone number": "619-260-4655"
+      },
+      "USDStudentFinancialServices": {
+        "Resource Type": "financial",
+        "state": "CA",
+        "title": "Student Financial Services (USD)",
+        "website": "https://www.sandiego.edu/financial-aid/"
+      },
+      "USDPublicSafety": {
+        "Resource Type": "emergency",
+        "state": "CA",
+        "title": "Public Safety Department (USD)",
+        "phone number": "619-260-7777"
+      },
+      "USDStudentWellness": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "Student Wellness Resources (USD)",
+        "website": "https://www.sandiego.edu/wellness/"
+      },
+      "USDEmergencyPrep": {
+        "Resource Type": "emergency",
+        "state": "CA",
+        "title": "Emergency Preparedness (USD)",
+        "website": "https://www.sandiego.edu/safety/emergency-preparedness/"
+      },
+      "PLNUWellnessCenter": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "Wellness Center (PLNU)",
+        "phone number": "619-849-2574"
+      },
+      "PLNUStudentFinancialServices": {
+        "Resource Type": "financial",
+        "state": "CA",
+        "title": "Student Financial Services (PLNU)",
+        "website": "https://www.pointloma.edu/offices/student-financial-services"
+      },
+      "PLNUCampusSafety": {
+        "Resource Type": "emergency",
+        "state": "CA",
+        "title": "Campus Safety and Emergency Services (PLNU)",
+        "phone number": "619-849-2525"
+      },
+      "PLNUStudentSuccess": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "Student Success and Wellness (PLNU)",
+        "website": "https://www.pointloma.edu/offices/student-success-wellness"
+      },
+      "PLNUHealthServices": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "Health Services (PLNU)",
+        "phone number": "619-849-2280"
+      },
+      "SDCCDMentalHealth": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "Mental Health Counseling (SDCCD)",
+        "phone number": "619-388-3055"
+      },
+      "SDCCDFinancialAid": {
+        "Resource Type": "financial",
+        "state": "CA",
+        "title": "Financial Aid Office (SDCCD)",
+        "website": "https://www.sdccd.edu/students/financial-aid/"
+      },
+      "SDCCDStudentHealthServices": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "Student Health Services (SDCCD)",
+        "website": "https://www.sdccd.edu/students/support-services/health-services.aspx"
+      },
+      "SDCCDDSPS": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "Disability Support Programs and Services (SDCCD)",
+        "website": "https://www.sdccd.edu/students/dsps/"
+      },
+      "SDCCDCampusPolice": {
+        "Resource Type": "emergency",
+        "state": "CA",
+        "title": "Campus Police (SDCCD)",
+        "phone number": "619-388-6405"
+      },
+      "UCSDCAPS": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "Counseling and Psychological Services (UCSD)",
+        "phone number": "858-534-3755"
+      },
+      "UCSDFinancialAid": {
+        "Resource Type": "financial",
+        "state": "CA",
+        "title": "Financial Aid and Scholarships Office (UCSD)",
+        "website": "https://fas.ucsd.edu/"
+      },
+      "UCSDStudentHealth": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "Student Health Services (UCSD)",
+        "website": "https://wellness.ucsd.edu/studenthealth/"
+      },
+      "UCSDOSD": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "Office for Students with Disabilities (UCSD)",
+        "website": "https://osd.ucsd.edu/"
+      },
+      "UCSDPoliceDepartment": {
+        "Resource Type": "emergency",
+        "state": "CA",
+        "title": "UCSD Police Department (UCSD)",
+        "phone number": "858-534-4357"
+      },
+      "CHHS-YMHRH": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "California Health and Human Services - Youth Mental Health Resources Hub",
+        "website": "https://www.chhs.ca.gov/youthresources/"
+      },
+      "UCSC-SSP": {
+        "Resource Type": "emergency",
+        "state": "CA",
+        "title": "University of California, Santa Cruz - Slug Support Program",
+        "phone number": "(831) 459-4446",
+        "email": "deanofstudents@ucsc.edu"
+      },
+      "FCC-BN": {
+        "Resource Type": "emergency",
+        "state": "CA",
+        "title": "Fresno City College - Basic Needs",
+        "contact": "Kizzy Lopez, Director of Basic Needs",
+        "email": "kizzy.lopez@fresnocitycollege.edu"
+      },
+      "LTCC-HSR": {
+        "Resource Type": "emergency",
+        "state": "CA",
+        "title": "Lake Tahoe Community College - Homeless Student Resources",
+        "contact": "Director of Student Equity",
+        "location": "Second floor of the Main Building, Room A258"
+      },
+      "LBCC-EHP": {
+        "Resource Type": "emergency",
+        "state": "CA",
+        "title": "Long Beach City College - Emergency Housing Programs",
+        "phone number": "(562) 938-5045",
+        "email": "basicneeds@lbcc.edu"
+      },
+      "CSU-URS": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "California State University - Resources for Undocumented Students",
+        "website": "https://www.calstate.edu/attend/student-services/resources-for-undocumented-students"
+      },
+      "CCC-MHRS": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "California Community Colleges - Mental Health Resources for Undocumented Students",
+        "website": "https://www.cccco.edu/Students/Support-Services/Special-population/Undocumented-Students/Resource-Center/resources-supporting-undocumented-student-mental-health"
+      },
+      "CSUMB-SSR": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "California State University, Monterey Bay - Student Support Resources",
+        "website": "https://csumb.edu/tla/wellness/co-curricular-learning-student-development-and-wellness/"
+      },
+      "CDE-MTSS": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "California Department of Education - Multi-Tiered System of Supports",
+        "website": "https://www.cde.ca.gov/ci/cr/ri/"
+      },
+      "CDE-SSSB": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "California Department of Education - Student Support Services Branch",
+        "website": "https://www.cde.ca.gov/re/di/or/sssbranch.asp"
+      },
+      "CDE-CS": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "California Department of Education - Counseling/Student Support",
+        "website": "https://www.cde.ca.gov/ls/ec/cefschoolcounsel.asp"
+      },
+      "UCB-CSI": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "University of California, Berkeley - Center for Support and Intervention",
+        "website": "https://csi.berkeley.edu/campus-community-resources/"
+      },
+      "CASC-SLC": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "California Association of Student Councils - Summer Leadership Conferences",
+        "website": "https://www.casc.net/"
+      },
+      "MSJC-LRC": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "Mt. San Jacinto College - Learning Resource Center",
+        "website": "http://www.msjc.edu/SI/Pages/What-is-SI.aspx"
+      },
+      "FCC-CCC": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "Foundation for California Community Colleges - CollegeBuys",
+        "website": "http://www.foundationccc.org"
+      },
+      "FCC-CC": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "Foundation for California Community Colleges - Career Catalyst",
+        "website": "http://www.foundationccc.org"
+      },
+      "FCC-SS": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "Foundation for California Community Colleges - Student Success Center",
+        "website": "http://www.foundationccc.org"
+      },
+      "FCC-WD": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "Foundation for California Community Colleges - Workforce Development",
+        "website": "http://www.foundationccc.org"
+      },
+      "FCC-EI": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "Foundation for California Community Colleges - Equity Initiatives",
+        "website": "http://www.foundationccc.org"
+      },
+      "SDSU-TRIO-SSS": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University TRIO Student Support Services",
+        "website": "https://sds.sdsu.edu/services/trio"
+      },
+      "USD-First-Gen": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "University of San Diego First-Generation College Student Experience",
+        "website": "https://www.sandiego.edu/first-gen/resources/"
+      },
+      "SDSU-ITE": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University Institute for Transformative Education",
+        "website": "https://ite.sdsu.edu/"
+      },
+      "USD-CAS-Student-Resources": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "University of San Diego College of Arts and Sciences Student Resources",
+        "website": "https://www.sandiego.edu/cas/student-resources/"
+      },
+      "USD-Center-Student-Success": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "University of San Diego Center for Student Success",
+        "website": "https://www.sandiego.edu/center-student-success/coaching/"
+      },
+      "SDSU-Student-Disability-Services": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University Student Disability Services",
+        "website": "https://sdsu.edu/student_affairs/sds"
+      },
+      "SDSU-WorkAbility-IV": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University WorkAbility IV",
+        "website": "https://sdsu.edu/student_affairs/sds/workability"
+      },
+      "SDSU-Deaf-Hard-of-Hearing-Services": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University Deaf/Hard-of-Hearing Services",
+        "website": "https://sdsu.edu/student_affairs/sds/dhh"
+      },
+      "SDSU-Test-Accommodation-Center": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University Test Accommodation Center",
+        "website": "https://sdsu.edu/student_affairs/sds/tac"
+      },
+      "SDSU-Cart-Transportation-Services": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University Cart Transportation Services",
+        "website": "https://sdsu.edu/student_affairs/sds/cart"
+      },
+      "SDSU-Housing-Accommodations": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University Housing Accommodations",
+        "website": "https://sdsu.edu/student_affairs/sds/housing"
+      },
+      "SDSU-Instructor-Support": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University Instructor Support",
+        "website": "https://sdsu.edu/student_affairs/sds/instructors"
+      },
+      "SDSU-TRIO-Alliance": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University TRIO Alliance",
+        "website": "https://ite.sdsu.edu/"
+      },
+      "SDSU-Volunteer-Opportunities": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University Volunteer Opportunities",
+        "website": "https://ite.sdsu.edu/"
+      },
+      "SDSU-Faculty-Partnerships": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University Faculty Partnerships",
+        "website": "https://ite.sdsu.edu/"
+      },
+      "SDSU-Community-Workforce-Partnerships": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "San Diego State University Community & Workforce Partnerships",
+        "website": "https://ite.sdsu.edu/"
+      },
+      "USD-Student-Support-Services": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "University of San Diego Student Support Services",
+        "website": "https://www.sandiego.edu/student-support-services/"
+      },
+      "USD-Summer-Bridge": {
+        "Resource Type": "academic",
+        "state": "CA",
+        "title": "University of San Diego Summer Bridge",
+        "website": "https://www.sandiego.edu/student-support-services/faq.php"
+      },
+      "USD-Student-Disability-Services": {
+        "Resource Type": ["academic", "self care"],
+        "state": "CA",
+        "title": "University of San Diego Student Disability Services",
+        "website": "https://www.sandiego.edu/disability-services/"
+      },
+      "USD-Student-Wellness-Resources": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "University of San Diego Student Wellness Resources",
+        "website": "https://www.sandiego.edu/wellness/"
+      },
+      "USD-Health-Promotion-Services": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "University of San Diego Health Promotion Services",
+        "website": "https://www.sandiego.edu/health-promotion/"
+      },
+      "USD-Student-Health-Services": {
+        "Resource Type": "self care",
+        "state": "CA",
+        "title": "University of San Diego Student Health Services",
+        "website": "https://www.sandiego.edu/health-center/"
+      }
+    }
+  }
+  
