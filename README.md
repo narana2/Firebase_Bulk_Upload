@@ -71,6 +71,67 @@ node uploadData.js
    - Upload all resources to your Firebase Realtime Database
    - Log the progress and any errors
 
+## CSV Import Tool
+
+This repository also includes a powerful tool for importing CSV files directly to Firebase Firestore.
+
+### Features
+
+- Import resources from CSV files to Firebase Firestore
+- Automatically generates IDs for resources without them
+- Detects and prevents duplicate entries
+- Handles batch operations efficiently
+- Detailed progress reporting
+
+### Using the CSV Import Tool
+
+1. Prepare your CSV file with headers matching your Firestore fields
+   - The first row should contain field names
+   - Include an "id" column for document IDs (optional)
+   - Make sure resource types, state designations, and other fields are properly formatted
+
+2. Run the CSV import script with your file:
+```bash
+node uploadCsvToFirebase.js
+```
+
+3. The script will:
+   - Read your CSV file (defaults to "Firebase Resources - resources.csv")
+   - Parse the CSV data into resource objects
+   - Generate IDs for any resources that don't have them
+   - Check for existing resources in the "testResources" collection
+   - Update existing resources or create new ones as needed
+   - Provide detailed logs of the process
+
+### ID Generation Logic
+
+For resources without an ID, the script automatically generates one using:
+
+1. Title-based IDs: Creates a slug from the resource title + resource type
+2. Type-based IDs: If no title, uses resource type + state + timestamp
+3. Generic IDs: As a last resort, creates a generic ID with index + timestamp
+
+Example: A resource with title "Youth Counseling" and type "self care" would get the ID "youth-counseling-self-care"
+
+### CSV Format Requirements
+
+Your CSV should include these fields (at minimum):
+- id (optional - will be generated if missing)
+- title
+- Resource Type
+- state
+- website (optional)
+- phone number (optional)
+- email (optional)
+
+## Data Analysis Tools
+
+The repository also includes tools for analyzing your resource database:
+
+- `analyzeResourceTypes.js`: Analyzes resources by type, state, and other metrics
+- `exportToCSV.js`: Exports your Firebase collection to a CSV file
+- `importFromGoogleSheet.js`: Imports resources directly from Google Sheets
+
 ## Data Structure
 
 ### Resource Types

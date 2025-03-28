@@ -6,11 +6,22 @@ yarn-error.log*
 
 # Firebase config
 serviceAccountKey.json
+serviceAccountKey-*.json
+*ServiceAccountKey*.json
+GoogleService-Info*.plist
+
+# Google API credentials
+google-sheets-credentials.json
+*-credentials.json
 
 # Environment variables
 .env
 .env.local
 .env.*.local
+
+# Generated files
+*_export_*.csv
+*_analysis_report_*.json
 
 # OS generated files
 .DS_Store
