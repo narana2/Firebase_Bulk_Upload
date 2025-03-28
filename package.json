@@ -8,8 +8,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "A Node.js utility for bulk uploading structured resource data to Firebase Realtime Database. This tool is specifically designed to handle educational and support resources data, including contact information, websites, and resource categorization.",
   "dependencies": {
-    "firebase-admin": "^13.0.1"
+    "axios": "^1.8.4",
+    "firebase-admin": "^13.0.2",
+    "googleapis": "^148.0.0"
   }
 }

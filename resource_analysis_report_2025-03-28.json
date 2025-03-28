@@ -1,0 +1,1111 @@
+{
+  "generatedAt": "2025-03-28T06:08:43.348Z",
+  "totalResources": 176,
+  "fieldAnalysis": {
+    "Resource Type": {
+      "displayName": "Resource Type",
+      "presentInResources": 175,
+      "percentagePresent": 99.4,
+      "hasMultipleValues": true,
+      "uniqueValueCount": 6,
+      "values": [
+        {
+          "value": "self care",
+          "count": 74,
+          "percentage": 42
+        },
+        {
+          "value": "academic",
+          "count": 45,
+          "percentage": 25.6
+        },
+        {
+          "value": "emergency",
+          "count": 35,
+          "percentage": 19.9
+        },
+        {
+          "value": "financial",
+          "count": 19,
+          "percentage": 10.8
+        },
+        {
+          "value": "food",
+          "count": 2,
+          "percentage": 1.1
+        },
+        {
+          "value": "educational",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Not specified",
+          "count": 1,
+          "percentage": 0.6
+        }
+      ]
+    },
+    "state": {
+      "displayName": "State",
+      "presentInResources": 176,
+      "percentagePresent": 100,
+      "hasMultipleValues": false,
+      "uniqueValueCount": 3,
+      "values": [
+        {
+          "value": "CA",
+          "count": 85,
+          "percentage": 48.3
+        },
+        {
+          "value": "AZ",
+          "count": 52,
+          "percentage": 29.5
+        },
+        {
+          "value": "ALL",
+          "count": 39,
+          "percentage": 22.2
+        }
+      ]
+    },
+    "title": {
+      "displayName": "Title",
+      "presentInResources": 176,
+      "percentagePresent": 100,
+      "hasMultipleValues": true,
+      "uniqueValueCount": 183,
+      "values": [
+        {
+          "value": "University of California",
+          "count": 2,
+          "percentage": 1.1
+        },
+        {
+          "value": "AI-Anon and Ala-Teen hotline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Arizona Crisis Line",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "AZ Dept Relief",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Alcoholics Anonymous",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "American Psychological Association",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "ASU 360 Life Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "ASU counseling",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "ASU Sun Devil Fitness",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "ASU Family Resources",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "ASU Health Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "ASU sexual and relationship violence program",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "ASU Wellness",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "AZ - Aurora Behavioral Health System",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "AZ Division of Behavioral Health Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "AZ - COPE Community Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "AZ EMPCT Suicide Prevention Center",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Food Bank Tempe Arizona",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Arizona Problem Gambling Helpline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "AZ Maricopa County Crisis Mobile Team",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "AZ Maricopa County Resources",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Arizona Mental Health Resources",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "NAMI Arizona",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "AZ - Solari Crisis and Human Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Be Connected AZ support line",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Arizona Sexual and Domestic Violence Helpline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "AZ - Terros Health",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Bipolar Hotline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Our Family Services - Behavioral Health Support",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Reach out boys town national hotline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "NAMI California",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California Academic Partnership Program",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "University of Arizona Counseling & Psych Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California Association of Student Councils - Summer Leadership Conferences",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "College Board",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California Community Colleges - Mental Health Resources for Undocumented Students",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Caridad Community Kitchen",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California College Pathways",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California Department of Education - Counseling/Student Support",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California Department of Education - Multi-Tiered System of Supports",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California Department of Education - Student Support Services Branch",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Community Food Bank",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "contact helpline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California Health and Human Services - Youth Mental Health Resources Hub",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "crisis line",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California Library Student Resources",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Casa Maria Soup Kitchen",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "City Program Disability Accommodation",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Cal State Apply",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California Student Aid Comission",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California Student Opportunity and Access Program",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California State University - Resources for Undocumented Students",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California State University",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Monterey Bay - Student Support Resources",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Cal State Student Wellness",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Campus Tutoring",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Crisis Text Line",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Victims of Crime",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "California Youth Crisis Hotline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Diaper Bank of Southern Az",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Domestic and Dating Violence Hotline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": " National Debt Relief Hotline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "National alliance for eating disorders helpline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Each Mind Matters",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "El Rio Health Centers",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Free Bankruptcy Advice",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Fresno City College - Basic Needs",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Foundation for California Community Colleges - Career Catalyst",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Foundation for California Community Colleges - CollegeBuys",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Foundation for California Community Colleges - Equity Initiatives",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Foundation for California Community Colleges - Student Success Center",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Foundation for California Community Colleges - Workforce Development",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Green Valley Food Bank",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Harvard T.H. Chan School of Public Health",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "National Human Trafficking Hotline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "John F. Long Family Services Center",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "JFCS Rental Assistance",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Long Beach City College - Emergency Housing Programs",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Lake Tahoe Community College - Homeless Student Resources",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Tech Hub",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Meisje Burton",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "MD",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "MBA",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "National Center for Missing and Exploited Children",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Mental Health in America: Where Are We Now?",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Mental Health Coalition",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Mt. San Jacinto College - Learning Resource Center",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "National Helpline for Male Survivors of Sexual Assault ",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Mount Zion Lutheran Church Food Pantry",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "NAMI helpline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "The relationship between occupational stress",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "mental health and work ability",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "National Institute of Mental Health",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "The OC warmline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "posion control emergency number",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Pima Community College Financial Resources",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Peer Group App - BetterEDU",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Planned Parenthood",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Project Healthy Minds",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Campus Safety and Emergency Services (PLNU)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Health Services (PLNU)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Student Financial Services (PLNU)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Student Success and Wellness (PLNU)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Wellness Center (PLNU)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Peer Leader Training",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Pitchfork Pantry",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "So Az AIDS Foundation",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "RAINN (National Sexual Assault Hotline)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Substance Abuse and Mental Health Services Administration",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Suicide and Crisis Lifeline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Campus Police (SDCCD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Disability Support Programs and Services (SDCCD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Financial Aid Office (SDCCD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Mental Health Counseling (SDCCD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Student Health Services (SDCCD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University Cart Transportation Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University Community & Workforce Partnerships",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University Deaf/Hard-of-Hearing Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University Faculty Partnerships",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University Housing Accommodations",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University Institute for Transformative Education",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University Instructor Support",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University Student Disability Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University TRIO Alliance",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University TRIO Student Support Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University Test Accommodation Center",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University Volunteer Opportunities",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "San Diego State University WorkAbility IV",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Basic Needs Center (SDSU)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Campus Assistance",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Response",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Evaluation & Support Team (SDSU)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Counseling & Psychological Services (SDSU)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Economic Crisis Response Team (SDSU)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Short-Term Loan Program (SDSU)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Soluna Mental Helth",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "National Suicide Prevention Lifeline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Social Security Information (SSI & SSD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Travis L. Williams Family Services Center",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "TEEN hotline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Teen Outreach Pregnancy Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Trevor Project Lifeline (LGBTQ+ crisis line)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Tax Relief Hotline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "TEST",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "The Trans Lifeline",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UofA Campus Resources",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UA Family & Community",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UA Ob/gyn",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UofA Tech Rental",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "University of California Admissions",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Berkeley - Center for Support and Intervention",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UC Berkley Crisis Resources",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UC Davis Mental Health Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UC Irvine Student Wellness",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UCLA Wellness",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UC Santa Barbara Student Wellness",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Santa Cruz - Slug Support Program",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UC Santa Cruz Counseling",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Counseling and Psychological Services (UCSD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Financial Aid and Scholarships Office (UCSD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Office for Students with Disabilities (UCSD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UCSD Police Department (UCSD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "UC San Diego Student Wellness",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Student Health Services (UCSD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "University of San Diego College of Arts and Sciences Student Resources",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "University of San Diego Center for Student Success",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "University of San Diego First-Generation College Student Experience",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "University of San Diego Health Promotion Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "University of San Diego Student Disability Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "University of San Diego Student Health Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "University of San Diego Student Support Services",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "University of San Diego Student Wellness Resources",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "University of San Diego Summer Bridge",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Counseling Center (USD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Emergency Preparedness (USD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Public Safety Department (USD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Student Financial Services (USD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Student Wellness Resources (USD)",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Veteran Crisis Line",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "WIC & Food Plus",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "World Health Organization",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Food Banks",
+          "count": 1,
+          "percentage": 0.6
+        },
+        {
+          "value": "Youth Mental Health",
+          "count": 1,
+          "percentage": 0.6
+        }
+      ]
+    }
+  },
+  "urlAnalysis": {
+    "urlField": "website",
+    "resourcesWithUrl": 119,
+    "percentageWithUrl": 67.6,
+    "duplicateUrls": [
+      {
+        "url": "http://www.foundationccc.org",
+        "count": 5
+      },
+      {
+        "url": "https://ite.sdsu.edu/",
+        "count": 5
+      },
+      {
+        "url": "https://sacd.sdsu.edu/ecrt/resources",
+        "count": 2
+      },
+      {
+        "url": "https://www.sandiego.edu/wellness/",
+        "count": 2
+      }
+    ],
+    "brokenLinks": {
+      "summary": {
+        "totalResources": 176,
+        "workingLinks": 91,
+        "brokenLinks": 28
+      },
+      "errorTypes": [
+        {
+          "type": "HTTP Status 404",
+          "count": 18
+        },
+        {
+          "type": "HTTP Status 403",
+          "count": 4
+        },
+        {
+          "type": "HTTP Status 405",
+          "count": 2
+        },
+        {
+          "type": "Parse Error",
+          "count": 1
+        },
+        {
+          "type": "Hostname/IP does not match certificate's altnames",
+          "count": 1
+        },
+        {
+          "type": "unable to verify the first certificate",
+          "count": 1
+        },
+        {
+          "type": "Connection timed out",
+          "count": 1
+        }
+      ]
+    }
+  },
+  "exampleDocument": {
+    "title": "AI-Anon and Ala-Teen hotline",
+    "phone number": "800-344-2666",
+    "Resource Type": "self care",
+    "state": "ALL"
+  },
+  "fieldsOverview": [
+    {
+      "name": "title",
+      "count": 176,
+      "percentage": 100
+    },
+    {
+      "name": "state",
+      "count": 176,
+      "percentage": 100
+    },
+    {
+      "name": "Resource Type",
+      "count": 175,
+      "percentage": 99.4
+    },
+    {
+      "name": "website",
+      "count": 119,
+      "percentage": 67.6
+    },
+    {
+      "name": "phone number",
+      "count": 81,
+      "percentage": 46
+    },
+    {
+      "name": "email",
+      "count": 3,
+      "percentage": 1.7
+    },
+    {
+      "name": "contact",
+      "count": 2,
+      "percentage": 1.1
+    },
+    {
+      "name": "location",
+      "count": 1,
+      "percentage": 0.6
+    },
+    {
+      "name": "Resource Type:",
+      "count": 1,
+      "percentage": 0.6
+    }
+  ]
+}
