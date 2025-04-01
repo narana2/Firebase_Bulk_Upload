@@ -58,18 +58,6 @@ npm install
 
 ## Usage
 
-1. Prepare your data in the `resources.json` file following the structure above
-
-2. Run the upload script:
-```bash
-node uploadData.js
-```
-
-3. The script will:
-   - Connect to your Firebase project
-   - Read the resources.json file
-   - Upload all resources to your Firebase Realtime Database
-   - Log the progress and any errors
 
 ## CSV Import Tool
 
@@ -155,13 +143,6 @@ The script includes error handling for:
 - Firebase connection issues
 - Data upload failures
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## Security Notes
 

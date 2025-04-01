@@ -67,6 +67,17 @@ async function readCSV(filePath) {
       let headers = null;
       let lineNumber = 0;
       
+      // Define expected headers and their mappings
+      const headerMappings = {
+        0: 'id',
+        1: 'title',
+        2: 'Resource Type',
+        3: 'state',
+        4: 'website',
+        5: 'phone number',
+        6: 'email'
+      };
+      
       rl.on('line', (line) => {
         lineNumber++;
         
@@ -77,16 +88,21 @@ async function readCSV(filePath) {
         const fields = parseCSVLine(line);
         
         if (!headers) {
-          // First line is headers
-          headers = fields;
+          // Use predefined headers mapping instead of reading from the first line
+          headers = [];
+          for (let i = 0; i < fields.length; i++) {
+            headers.push(headerMappings[i] || `field${i}`);
+          }
+          
+          console.log(`Using headers: ${headers.join(', ')}`);
         } else {
           // Create an object for each data row
           const resource = {};
           
           // Assign each field to its corresponding header
           for (let i = 0; i < headers.length; i++) {
-            // Skip empty fields
-            if (fields[i] !== '') {
+            // Skip empty fields and ensure no empty keys are used
+            if (fields[i] !== '' && headers[i] !== '') {
               resource[headers[i]] = fields[i];
             }
           }
@@ -147,9 +163,35 @@ function generateResourceId(resource, index) {
   return `generated-resource-${index}-${Date.now().toString().slice(-6)}`;
 }
 
+// Function to compare two objects and check if they have different values
+function hasResourceChanged(existingData, newData) {
+  // If existing data is null/undefined, consider it as changed
+  if (!existingData) return true;
+  
+  // Compare each field in newData with existingData
+  for (const key in newData) {
+    // Skip comparing id field as it's the document ID
+    if (key === 'id') continue;
+    
+    // If field exists in newData but not in existingData, or has different value
+    if (!(key in existingData) || existingData[key] !== newData[key]) {
+      return true;
+    }
+  }
+  
+  // Check if there are fields in existingData that are not in newData
+  for (const key in existingData) {
+    if (!(key in newData)) {
+      return true;
+    }
+  }
+  
+  return false;
+}
+
 // Function to upload resources to Firebase
-async function uploadToFirebase(resources, collectionName) {
-  console.log(`Uploading ${resources.length} resources to collection: ${collectionName}`);
+async function uploadToFirebase(resources, collectionName, isDryRun = false) {
+  console.log(`Uploading ${resources.length} resources to collection: ${collectionName}${isDryRun ? ' (DRY RUN)' : ''}`);
   
   // Create a batch for efficient uploading
   let batch = db.batch();
@@ -161,27 +203,38 @@ async function uploadToFirebase(resources, collectionName) {
   let failureCount = 0;
   let updatedCount = 0;
   let newCount = 0;
+  let unchangedCount = 0;
   let generatedIdCount = 0;
+  let skippedCount = 0;
   
   // Keep track of document IDs to detect duplicates within the CSV
   const processedIds = new Set();
   const duplicateIds = [];
   const generatedIds = [];
+  const skippedResources = [];
   
   try {
     // First, check which resources already exist in the collection
     console.log(`Checking for existing documents in collection: ${collectionName}`);
     const existingDocsSnapshot = await db.collection(collectionName).get();
-    const existingDocs = new Set();
+    const existingDocs = new Map(); // Use Map to store both ID and data
     
     existingDocsSnapshot.forEach(doc => {
-      existingDocs.add(doc.id);
+      existingDocs.set(doc.id, doc.data());
     });
     
     console.log(`Found ${existingDocs.size} existing documents in the collection`);
     
     for (let i = 0; i < resources.length; i++) {
       const resource = resources[i];
+      
+      // Skip if no resource data or empty object
+      if (!resource || Object.keys(resource).length === 0) {
+        console.log(`Skipping empty resource at index ${i}`);
+        skippedCount++;
+        skippedResources.push({ index: i, reason: 'Empty resource' });
+        continue;
+      }
       
       // Extract the document ID if it exists, otherwise generate one
       let docId = resource.id;
@@ -210,6 +263,8 @@ async function uploadToFirebase(resources, collectionName) {
         } else {
           console.warn(`Warning: Duplicate ID found in CSV data: ${docId}. Only the first occurrence will be used.`);
           duplicateIds.push(docId);
+          skippedCount++;
+          skippedResources.push({ index: i, id: docId, reason: 'Duplicate ID' });
           continue;
         }
       }
@@ -223,31 +278,69 @@ async function uploadToFirebase(resources, collectionName) {
         delete resourceData.id;
       }
       
+      // Additional validation: skip if empty field names exist
+      let hasEmptyFieldName = false;
+      for (const key in resourceData) {
+        if (!key || key.trim() === '') {
+          hasEmptyFieldName = true;
+          console.warn(`Warning: Empty field name found in resource at index ${i}. Skipping this resource.`);
+          break;
+        }
+      }
+      
+      if (hasEmptyFieldName) {
+        skippedCount++;
+        skippedResources.push({ index: i, id: docId, reason: 'Empty field name' });
+        continue;
+      }
+      
       // Get document reference
       const docRef = db.collection(collectionName).doc(docId);
       
       // Check if this document already exists in the collection
-      const docExists = existingDocs.has(docId);
+      const existingData = existingDocs.get(docId);
+      const docExists = existingData !== undefined;
       
-      // Add set operation to batch
-      batch.set(docRef, resourceData);
-      operationCount++;
+      // Check if the resource has changed
+      const hasChanged = !docExists || hasResourceChanged(existingData, resourceData);
       
-      // Track if this is an update or new document
-      if (docExists) {
-        updatedCount++;
-      } else {
-        newCount++;
+      // In dry run mode, just log what would happen
+      if (isDryRun) {
+        if (!docExists) {
+          console.log(`[DRY RUN] Would create new document ${docId}:`);
+        } else if (hasChanged) {
+          console.log(`[DRY RUN] Would update changed document ${docId}:`);
+        } else {
+          console.log(`[DRY RUN] Would skip unchanged document ${docId}`);
+        }
+        if (hasChanged) {
+          console.log('  Data:', JSON.stringify(resourceData, null, 2));
+        }
+      } else if (hasChanged) {
+        // Add set operation to batch only if the resource has changed
+        batch.set(docRef, resourceData);
+        operationCount++;
+        
+        // If we've reached the batch limit or the end of the resources, commit the batch
+        if (operationCount === batchLimit || i === resources.length - 1) {
+          await batch.commit();
+          console.log(`Batch committed: ${operationCount} operations`);
+          
+          // Reset for next batch
+          batch = db.batch();
+          operationCount = 0;
+        }
       }
       
-      // If we've reached the batch limit or the end of the resources, commit the batch
-      if (operationCount === batchLimit || i === resources.length - 1) {
-        await batch.commit();
-        console.log(`Batch committed: ${operationCount} operations`);
-        
-        // Reset for next batch
-        batch = db.batch();
-        operationCount = 0;
+      // Track if this is an update, new document, or unchanged
+      if (docExists) {
+        if (hasChanged) {
+          updatedCount++;
+        } else {
+          unchangedCount++;
+        }
+      } else {
+        newCount++;
       }
       
       // Update success count
@@ -260,9 +353,11 @@ async function uploadToFirebase(resources, collectionName) {
     }
     
     console.log(`\nUpload completed: ${successCount} resources processed successfully`);
-    console.log(`- ${newCount} new resources created`);
-    console.log(`- ${updatedCount} existing resources updated`);
+    console.log(`- ${newCount} new resources ${isDryRun ? 'would be created' : 'created'}`);
+    console.log(`- ${updatedCount} existing resources ${isDryRun ? 'would be updated' : 'updated'}`);
+    console.log(`- ${unchangedCount} existing resources ${isDryRun ? 'would be skipped' : 'skipped'} (no changes)`);
     console.log(`- ${generatedIdCount} resources had IDs automatically generated`);
+    console.log(`- ${skippedCount} resources skipped due to errors`);
     
     if (generatedIds.length > 0) {
       console.log(`\nGenerated IDs summary:`);
@@ -280,16 +375,30 @@ async function uploadToFirebase(resources, collectionName) {
       }
     }
     
+    if (skippedResources.length > 0) {
+      console.log(`\n${skippedResources.length} resources skipped:`);
+      if (skippedResources.length <= 10) {
+        skippedResources.forEach(item => {
+          console.log(`- Index ${item.index}${item.id ? `, ID: ${item.id}` : ''}, Reason: ${item.reason}`);
+        });
+      } else {
+        console.log(`  First 10 skipped resources:`);
+        skippedResources.slice(0, 10).forEach(item => {
+          console.log(`- Index ${item.index}${item.id ? `, ID: ${item.id}` : ''}, Reason: ${item.reason}`);
+        });
+      }
+    }
+    
     if (failureCount > 0) {
       console.log(`- ${failureCount} resources failed to upload`);
     }
     
-    return { successCount, failureCount, newCount, updatedCount, duplicateIds, generatedIds };
+    return { successCount, failureCount, newCount, updatedCount, unchangedCount, duplicateIds, generatedIds, skippedResources };
   } catch (error) {
     console.error('Error in batch upload:', error);
     // Update failure count with remaining items
     failureCount += (resources.length - successCount);
-    return { successCount, failureCount, newCount, updatedCount, duplicateIds, generatedIds, error };
+    return { successCount, failureCount, newCount, updatedCount, unchangedCount, duplicateIds, generatedIds, skippedResources, error };
   }
 }
 
@@ -297,6 +406,12 @@ async function uploadToFirebase(resources, collectionName) {
 async function uploadCsvToFirebase() {
   try {
     console.log('Starting CSV import to Firebase...');
+    
+    // Check for --dry-run flag
+    const isDryRun = process.argv.includes('--dry-run');
+    if (isDryRun) {
+      console.log('DRY RUN MODE: No changes will be made to Firebase');
+    }
     
     // Use the specific CSV file instead of finding the most recent one
     const csvFile = 'Firebase Resources - resources.csv';
@@ -306,19 +421,19 @@ async function uploadCsvToFirebase() {
     const resources = await readCSV(csvFile);
     
     // Target collection name
-    const collectionName = 'testResources';
+    const collectionName = 'resourcesApp';
     
     // Ask for confirmation before uploading
-    console.log(`\nReady to upload ${resources.length} resources to collection "${collectionName}".`);
+    console.log(`\nReady to ${isDryRun ? 'simulate upload of' : 'upload'} ${resources.length} resources to collection "${collectionName}".`);
     console.log('Press Ctrl+C to cancel or wait 5 seconds to proceed...');
     
     // Wait 5 seconds before proceeding (allows time to cancel)
     await new Promise(resolve => setTimeout(resolve, 5000));
     
     // Upload to Firebase
-    await uploadToFirebase(resources, collectionName);
+    await uploadToFirebase(resources, collectionName, isDryRun);
     
-    console.log(`\nImport to collection "${collectionName}" completed successfully!`);
+    console.log(`\nImport to collection "${collectionName}" ${isDryRun ? 'simulation' : ''} completed successfully!`);
     
     // Clean up Firebase connection
     await app.delete();
